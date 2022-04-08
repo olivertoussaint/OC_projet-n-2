@@ -73,7 +73,7 @@ h1, h2 {
 }
 
 .menu-item:hover {
-    border-top: 2px solid var(--blue);
+    border-top: 3px solid var(--blue);
     color: var(--blue);
 }
 
@@ -256,6 +256,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 }
 
 h3 {
+    color: var(--black);
     font-size: 16px;
     font-weight: 800;
 }
@@ -265,6 +266,7 @@ h3 {
  }
 
 .card_body_hotel p, .card_populars_hotels p {
+    color: var(--black);  
     font-size: 14px;
 }
 
@@ -368,7 +370,8 @@ h3 {
 }
 
 .card_activities h3 {
-    padding: 6%;  
+    padding: 6%;
+    /* color: var(--black);   */
 }
 
 .card_activities img {
@@ -490,7 +493,7 @@ h3 {
     
     .menu-item:hover {
         border-top: none;
-        border-bottom: 2px solid var(--blue);
+        border-bottom: 3px solid var(--blue);
         padding: 10px 51px;  
     }
 
