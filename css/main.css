@@ -59,7 +59,7 @@ h1, h2 {
 
 .color_fw_opa {
     font-weight: 600;
-    color: #242222;
+    color: #747373;
     opacity: 0.9;
 }
 
@@ -444,7 +444,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 .footerLink {
     display: block;
     margin: 15px 0;
-    color: #242222;
+    color: #404040;
     font-size: medium;
     font-weight: 600;
     opacity: 0.6;
@@ -492,6 +492,45 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
     }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .card_1 img, .card_2 img {
+        height: 325px;
+        object-fit: cover;
+    }
+    .card_group_1 img,.card_group_2 img,.card_group_3 img,.card_group_4 img {
+        height: 260px;
+    }
+}
+
+@media only screen and (min-device-width: 912px) and (max-device-width: 1368px) {
+    .card_populars_hotels {
+        width: 84%;
+    }
+    .card_one,.card_group {
+        width: 46%;
+    }
+    .card_one {
+        height: 100%;
+    }
+    .card_1 img, .card_2 img {
+        height: 345px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) {
+    .card_activities {
+        flex-direction: row;
+    }
+    .card_1 img, .card_2 img {
+        height: 588px;
+        object-fit: cover;
+    }
+    .footer-wrapper {
+        padding: 0 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .header #logo img {
         margin-bottom: 20px;
@@ -502,9 +541,6 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
         flex-direction: column;
         height: 100%;
         margin: 0;
-    }
-    .menu-item {
-        padding: 20px 30px;
     }
     .menu-item:hover {
         border-top: none;
@@ -537,6 +573,19 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
     }
 }
 
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) {
+    .menu-item {
+        padding: 20px 10px;
+    }
+    .to {
+        width: 160px;
+        font-size: 16px;
+    }
+    .activityCardTitle, .accommodation_title, .popular_hotel_title {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 601px) {
     #page-activities {
         padding: 3em 0 2em 0;
@@ -564,8 +613,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 @media screen and (max-width: 667px) {
     .formula {
         justify-content: center;
-    }
-    
+    }  
     .footer-wrapper  {
         flex-direction: column;
         padding: 30px;
@@ -606,7 +654,6 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
         padding: 30px;
     }
     .card_hotel {
-        min-width: 324px;
         gap: 20px;
     }
 }
@@ -636,19 +683,15 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 }
 
 @media screen and (max-width: 359px) {
-    .menu-item {
-        padding: 20px 20px;
-    }
     .search h1 {
         font-size: 19px;
     }
     .to {
         font-size: 16px;
         font-weight: 800;
-        width: 185px;
     }
     .page_populars {
-        min-width: 265px;
+        min-width: 250px;
     }
     .page_populars h2 {
         font-size: 17px;
@@ -663,3 +706,5 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
         min-width: 220px;
     }
 }
+
+
