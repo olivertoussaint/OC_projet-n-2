@@ -191,7 +191,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 }
 
 .info p {
-    margin-left: 15px;
+    margin-left: 12px;
 }
 
 /* ACCOMMODATION */
@@ -306,7 +306,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
     display:flex;
     flex-direction:column;
     padding-top: 30px;
-    row-gap:12px;
+    /* row-gap:12px; */
 }
 
 .card_populars_hotels {
@@ -347,9 +347,12 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
  }
 
 /* ACTIVITY */
-#page-activities {
+/* #page-activities {
     padding: 5em 0 ;
- }
+ } */
+ #page-activities {
+    padding: 4em 0;
+}
 
 .card_activities {
     display:flex;
@@ -376,7 +379,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 }
 
 .card_group {
-    width: 22%;
+    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
@@ -401,7 +404,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 }
 
 .card_group_2 img {
-    height: 110px;
+    height: 130px;
     object-fit: cover;
     object-position: 51% 23%;
 }
@@ -413,7 +416,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 }
 
 .card_group_4 img {
-    height: 150px;
+    height: 170px;
     object-fit: cover;
     object-position: 50% 10%;
 }
@@ -488,11 +491,14 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
         gap: 20px;
     }
     .card_hotel {
-        min-width: 310px;
+        min-width: 334px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #page-activities {
+        padding: 1em 25px;
+    }
     .card_1 img, .card_2 img {
         height: 325px;
         object-fit: cover;
@@ -503,6 +509,9 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
 }
 
 @media only screen and (min-width: 912px) and (max-width: 1368px) {
+    #page-activities {
+        padding: 3em 25px;
+    }
     .card_populars_hotels {
         width: 84%;
     }
@@ -518,18 +527,7 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
     }
 }
 
-@media only screen and (min-width: 820px) and (max-width: 1180px) {
-    .card_activities {
-        flex-direction: row;
-    }
-    .card_1 img, .card_2 img {
-        height: 588px;
-        object-fit: cover;
-    }
-    .footer-wrapper {
-        padding: 0 10px;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     .header #logo img {
@@ -542,53 +540,130 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
         height: 100%;
         margin: 0;
     }
+    nav {
+        display: flex;
+    }
+    .menu-item {
+        border-bottom: 3px solid var(--grey);
+    }
     .menu-item:hover {
         border-top: none;
-        border-bottom: 2px solid var(--blue);
+        border-bottom: 3px solid var(--blue);
     }
     main {
         margin: 0;
         overflow-x: hidden;
     }
     .search {
-        margin-top: 35px;
+        margin: 25px;
     }
     .formula {
-        justify-content: flex-start;
+        margin: 25px 0px 0px 0;
     }
-    .activityCardTitle, .accommodation_title, .popular_hotel_title {
+    .filter {
+        margin: 30px 0px 30px 25px;
+    }
+    /* .formula {
+        justify-content: flex-start;
+    } */
+    /* .activityCardTitle, .accommodation_title, .popular_hotel_title {
         font-size: 14px;
+    } */
+    .page_populars {
+        padding: 40px 21px 0px 21px;
+    }
+    .accommodation_Marseille {
+        background-color: var(--white);
+        padding: 25px;
+    }
+    .card_accommodation_Marseille {
+        padding: 30px 0px;
     }
     .card_one,.card_group {
         width: 100%;
     }
-    .card_group_1, .card_group_2, .card_group_3, .card_group_4 {
+    .card_group_1,.card_group_2,.card_group_3,.card_group_4 {
         margin: 25px 0;
     }
-    .footer-wrapper  {
+    /* .footer-wrapper  {
         padding: 30px;
-    }
+    } */
     .footerWrapper {
         width: 100%;
+        padding: 0;
     }
 }
 
 @media only screen and (min-width: 280px) and (max-width: 653px) {
     .menu-item {
-        padding: 20px 10px;
+        padding: 10px 25px;
     }
     .to {
-        width: 160px;
-        font-size: 16px;
+        width: 148px;
+        font-size: 17px;
+    }
+    .info {
+        margin: 20px;
+    }
+    .fa-info {
+        position: relative;
+        bottom: 10px;
+        left: 4px;
     }
     .activityCardTitle, .accommodation_title, .popular_hotel_title {
+        font-size: 15px;
+    }
+    /* .activityCardTitle, .accommodation_title, .popular_hotel_title {
         font-size: 12px;
+    } */
+}
+
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+    .menu-item {
+        padding: 10px 59px;
+    }
+
+}
+@media only screen and (min-width: 390px) and (max-width: 844px) {
+    .menu-item {
+        padding: 10px 53px;
+    }
+}
+@media only screen and (min-width: 412px) and (max-width: 915px) {
+    .menu-item {
+        padding: 10px 58px;
+    }
+}
+@media only screen and (min-width: 412px) and (max-width: 915px) {
+    .to {
+        width: 280px;
+    }
+}
+
+
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+    .menu-item {
+        padding: 47px 25px;
+    }
+    .card_activities {
+        flex-direction: row;
+    }
+    .card_1 img, .card_2 img {
+        height: 588px;
+        object-fit: cover;
+    }
+    .footer-wrapper {
+        padding: 0 10px;
     }
 }
 
 @media screen and (max-width: 601px) {
+    .layout {
+        padding: 0;
+    }
     #page-activities {
-        padding: 3em 0 2em 0;
+        /* padding: 3em 0 2em 0; */
+        margin: 0 25px;
     }
     .research {
         display: none;
@@ -600,7 +675,8 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
         background-color: var(--blue);
         color: var(--white);
         border: 2px solid var(--blue);
-        border-radius: 0 1rem 1rem 0;
+        border-radius: 1rem;
+        margin-left: -8px;
     }
     .fa-search {
         line-height: 2.5;
@@ -609,11 +685,29 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
         min-width: 330px;
     }
 }
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+    .menu-item {
+        padding: 10px 90px;
+    }
+    .search-button {
+        display: none;
+    }
+    .research {
+        display: block;
+    }
+    #page-activities {
+        padding: 1em 0;
+    }
+}
 
 @media screen and (max-width: 667px) {
-    .formula {
+    /* .formula {
         justify-content: center;
-    }  
+    }   */
+    .page_populars {
+        border-radius: 0;
+    }
+
     .footer-wrapper  {
         flex-direction: column;
         padding: 30px;
@@ -686,10 +780,10 @@ input:-moz-placeholder { color: var(--black); opacity: 1; }
     .search h1 {
         font-size: 19px;
     }
-    .to {
+    /* .to {
         font-size: 16px;
         font-weight: 800;
-    }
+    } */
     .page_populars {
         min-width: 250px;
     }
