@@ -27,6 +27,7 @@ h1 {
 
 a {
     text-decoration: none; 
+    color: var(--black);
 }
 
 a:visited {
@@ -473,7 +474,7 @@ img {
 
 /* ------------ MEDIA QUERIES --------------- */
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
     #page-accommodation {
         flex-direction: column-reverse;
         overflow-x: hidden;
@@ -787,7 +788,7 @@ img {
     }
 }
 
-@media only screen and (min-width: 912px) and (max-width: 1368px) {
+@media only screen and (min-width: 912px) and (max-width: 1200px) {
     nav a {
         padding: 1.75rem 3rem;
     }
